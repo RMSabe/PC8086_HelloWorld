@@ -25,20 +25,20 @@ sysloop:
 	push bx
 	push string
 	jmp print
-	times 8 nop
+	times 8 nop	;Yes, these 8 NOPs (No operand instruction) are a "landing area" for when returning to the sysloop routine
 	add cx, 0xa0
 	cmp cx, 0xfa0
 	mov sp, bp
 	mov bx, $
 	push bx
 	je resetline
-	times 8 nop
+	times 8 nop	;Same thing here
 	inc ah
 	mov sp, bp
 	mov bx, $
 	push bx
 	jmp hold
-	times 8 nop
+	times 8 nop	;Same thing here
 	jmp sysloop
 
 print:
