@@ -1,4 +1,8 @@
 # PC8086_HelloWorld
+
+THIS REPOSITORY IS OBSOLETE. 
+Check the "PCx86_baremetal" repository for updates.
+
 This is a little 8086 PC bootloader that prints hello world repeatedly...
 
 I used NASM to assemble the code into raw binary.
